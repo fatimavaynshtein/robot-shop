@@ -1,4 +1,4 @@
-Question answers from email:
+Email Q&A.
 
 *Kubernetes Namespace
   Q. What is a namespace?
@@ -29,10 +29,25 @@ Question answers from email:
 
 *Kubernetes Commands
   Q. How do you get the logs of a pod?
-  A. 
+  A. kubectl logs pod-name-here 
+     kubectl logs pod-name-here --all-containers to get logs for all containers in the pod.
+     kubectl logs pod-name-here container-name to get logs for a spexific container within the pod.
   
   Q. How do you get a list of the pods for a specific namespace?
   A. kubectl --namespace your-space-name  get pods
   
   Q. How do you get a list of events for a pod?
+  A. kubectl describe pod pod-name-here
+
+Service installation:
+1. I first crerated a test kubernetes cluster with 3 nodes on Linode.
+2. Installed kubectl on my mac and configured it to work with the cluster that I have created earlier on Linode.
+3. Installed git on my mac
+4. Pulled the robot-shop from forked repo that i've created earlier
+5. Installed helm on my mac
+6. Configured helm following instruction from here https://artifacthub.io/packages/helm/cloud-native-toolkit/robot-shop
+7. Created new namespace on my cluster by using kubectl create ns robot-shop
+8. Installed robot shop to my cluster with this command$ helm install robot-shop --namespace robot-shop .
+9. Tested the shop on the following URL http://172.104.255.157:8080/
+10. Screenshot file RoboShopAfterinstallationScreenshot.png is included in the repo
 
