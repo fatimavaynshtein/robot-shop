@@ -52,6 +52,7 @@ Service installation:
 10. Screenshot file RoboShopAfterinstallationScreenshot.png is included in the repo
 
 Git "master" branch question 14:
+
 Since "master" branch is feeding production environment it is not advisable to commit 
 changes directly to the "master" branch.
 The best practice is to first commit to a some test branch and only after testing the new 
@@ -83,4 +84,4 @@ To disable fast-forward merges, I  also added the following option to the
 [branch "master"]
     mergeoptions = --no-ff
 
-This prevented any future direct commits to the "master" branch.
+This change prevented any future direct commits to the "master" branch.
