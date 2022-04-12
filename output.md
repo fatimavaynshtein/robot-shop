@@ -51,3 +51,36 @@ Service installation:
 9. Tested the shop on the following URL http://172.104.255.157:8080/
 10. Screenshot file RoboShopAfterinstallationScreenshot.png is included in the repo
 
+Git "master" branch question 14:
+Since "master" branch is feeding production environment it is not advisable to commit 
+changes directly to the "master" branch.
+The best practice is to first commit to a some test branch and only after testing the new 
+code, changes should be mrged into the "master" branch.
+
+I have modified configuration of my repo so that I won't be able to commit anything 
+directly to the "master" branch.
+
+The configuration process is decribed bellow:
+
+I have created a file, .git/hooks/pre-commit, with the following content:
+
+#!/bin/sh
+
+branch="$(git rev-parse --abbrev-ref HEAD)"
+
+if [ "$branch" = "master" ]; then
+  echo "You can't commit directly to master branch"
+  exit 1
+fi
+
+Made the file executable:
+
+chmod +x .git/hooks/pre-commit
+
+To disable fast-forward merges, I  also added the following option to the 
+.git/config file:
+
+[branch "master"]
+    mergeoptions = --no-ff
+
+This prevented any future direct commits to the "master" branch.
