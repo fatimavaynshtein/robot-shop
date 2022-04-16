@@ -7,7 +7,7 @@
   Q. Why would you use a namespace?
   A. A Kubernetes namespace helps separate a cluster into logical units
 
-*Kubernetes Pods
+### *Kubernetes Pods
   Q. What are pods?
   A. Pods are the smallest, most basic deployable objects in Kubernetes. 
      A Pod represents a single instance of a running process in your cluster.
@@ -17,7 +17,7 @@
      Containers can easily communicate with other containers in the same pod as 
      though they were on the same machine while maintaining a degree of isolation from others.
  
-* Kubernetes Deployments
+### * Kubernetes Deployments
   Q.What are deployments?
   A. A Kubernetes Deployment is used to tell Kubernetes how to create or modify instances 
      of the pods that hold a containerized application.
@@ -27,7 +27,7 @@
      You can just declare the desired state of the system, and it will be managed 
      for you automatically.
 
-*Kubernetes Commands
+### *Kubernetes Commands
   Q. How do you get the logs of a pod?
   A. kubectl logs pod-name-here 
      kubectl logs pod-name-here --all-containers to get logs for all containers in the pod.
@@ -39,7 +39,7 @@
   Q. How do you get a list of events for a pod?
   A. kubectl describe pod pod-name-here
 
-Service installation:
+### Service installation:
 1. I first crerated a test kubernetes cluster with 3 nodes on Linode.
 2. Installed kubectl on my mac and configured it to work with the cluster that I have created earlier on Linode.
 3. Installed git on my mac
@@ -86,7 +86,7 @@ To disable fast-forward merges, I  also added the following option to the
 
 This change prevented any future direct commits to the "master" branch.
 
-Logo and signature question 16:
+### Logo and signature question 16:
 
 Changes logo and backround to match :-)
 Signsature is in the footer on the borrom.
