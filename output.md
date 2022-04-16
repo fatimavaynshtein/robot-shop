@@ -1,8 +1,8 @@
 # Email Q&A.
 
 ### *Kubernetes Namespace
-  Q. What is a namespace?
-  A. Namespace provides a mechanism for isolating groups of resources within a single cluster. 
+ > Q. What is a namespace?
+ > A. Namespace provides a mechanism for isolating groups of resources within a single cluster. 
   
   Q. Why would you use a namespace?
   A. A Kubernetes namespace helps separate a cluster into logical units
