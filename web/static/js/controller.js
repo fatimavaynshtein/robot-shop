@@ -150,7 +150,7 @@
             if(newVal !== oldVal) {
                 $scope.data.uniqueid = currentUser.uniqueid;
                 if(typeof ineum !== 'undefined') {
-                    if(! currentUser.uniqueid.startsWith('anonymous')) {
+                    if(! currentUser.uniqueid.startsWith('Sergey Kamenezki')) {
                         console.log('Setting user details', currentUser);
                         ineum('user', currentUser.uniqueid, currentUser.user.name, currentUser.user.email);
                     }
