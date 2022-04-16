@@ -48,8 +48,8 @@ Service installation:
 6. Configured helm following instruction from here https://artifacthub.io/packages/helm/cloud-native-toolkit/robot-shop
 7. Created new namespace on my cluster by using kubectl create ns robot-shop
 8. Installed robot shop to my cluster with this command$ helm install robot-shop --namespace robot-shop .
-9. Tested the shop on the following URL http://172.104.255.157:8080/
-10. Screenshot file RoboShopAfterinstallationScreenshot.png is included in the repo
+9. Tested the shop, and took and screenshot
+https://github.com/fatimavaynshtein/robot-shop/blob/master/Assignment%20images/RoboShopAfterinstallationScreenshot.png
 
 Git "master" branch question 14:
 
@@ -85,3 +85,9 @@ To disable fast-forward merges, I  also added the following option to the
     mergeoptions = --no-ff
 
 This change prevented any future direct commits to the "master" branch.
+
+Logo and signature question 16:
+
+Changes logo and backround to match :-)
+Signsature is in the footer on the borrom.
+https://github.com/fatimavaynshtein/robot-shop/blob/master/Assignment%20images/Logo%20and%20backround%20change%20plus%20signature%20in%20the%20footer%20section.png
