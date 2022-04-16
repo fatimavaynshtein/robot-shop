@@ -49,7 +49,7 @@ Service installation:
 7. Created new namespace on my cluster by using kubectl create ns robot-shop
 8. Installed robot shop to my cluster with this command$ helm install robot-shop --namespace robot-shop .
 9. Tested the shop, and took and screenshot
-https://github.com/fatimavaynshtein/robot-shop/blob/master/Assignment%20images/RoboShopAfterinstallationScreenshot.png
+![This is an image](https://github.com/fatimavaynshtein/robot-shop/blob/master/Assignment%20images/RoboShopAfterinstallationScreenshot.png)
 
 Git "master" branch question 14:
 
