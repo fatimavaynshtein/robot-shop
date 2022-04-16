@@ -90,4 +90,4 @@ Logo and signature question 16:
 
 Changes logo and backround to match :-)
 Signsature is in the footer on the borrom.
-https://github.com/fatimavaynshtein/robot-shop/blob/master/Assignment%20images/Logo%20and%20backround%20change%20plus%20signature%20in%20the%20footer%20section.png
+![This is an image](https://github.com/fatimavaynshtein/robot-shop/blob/master/Assignment%20images/Logo%20and%20backround%20change%20plus%20signature%20in%20the%20footer%20section.png)
