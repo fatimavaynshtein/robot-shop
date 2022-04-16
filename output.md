@@ -1,6 +1,6 @@
-Email Q&A.
+# Email Q&A.
 
-*Kubernetes Namespace
+### *Kubernetes Namespace
   Q. What is a namespace?
   A. Namespace provides a mechanism for isolating groups of resources within a single cluster. 
   
